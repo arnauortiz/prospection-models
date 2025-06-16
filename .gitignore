@@ -1,0 +1,5 @@
+data/
+noteboook*
+venv 
+env 
+__pycache__/

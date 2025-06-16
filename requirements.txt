@@ -1,0 +1,7 @@
+pandas>=2.1.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+pyarrow>=14.0.1  # Para soporte de parquet 
+scikit-learn>=1.7.0
+seaborn>=0.13.2
+xgboost>=3.0.2
