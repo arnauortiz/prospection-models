@@ -4,10 +4,10 @@
 
 🧪 Model de Paraules Clau
 ------------------------------
-Precision   : 0.0000
-Recall      : 0.0000
-F1 Score    : 0.0000
-Accuracy    : 0.5347
+Precision   : 0.9273
+Recall      : 0.7612
+F1 Score    : 0.8364
+Accuracy    : 0.8601
 
 🧪 Model de Similitud
 ------------------------------

@@ -155,7 +155,7 @@ python scripts/visualization/statistics.py
 ### Models No Supervisats
 | Model | Precision | Recall | F1 Score | Accuracy |
 |-------|-----------|---------|-----------|-----------|
-| Model de Paraules Clau | 0.0000 | 0.0000 | 0.0000 | 0.5347 |
+| Model de Paraules Clau | 0.9273 | 0.7612 | 0.8364 | 0.8601 |
 | Model de Similitud | 0.9710 | 1.0000 | 0.9853 | 0.9861 |
 
 ### Finetuning del Model de Similitud
