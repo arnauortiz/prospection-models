@@ -159,11 +159,11 @@ python scripts/visualization/statistics.py
 | Model de Similitud | 0.9710 | 1.0000 | 0.9853 | 0.9861 |
 
 ### Finetuning del Model de Similitud
-El millor threshold trobat és **0.51** amb les següents mètriques:
-- F1 Score: 0.9926
-- Precision: 0.9853
+El millor threshold trobat és **0.55** amb les següents mètriques:
+- F1 Score: 1.0000
+- Precision: 1.0000
 - Recall: 1.0000
-- Accuracy: 0.9931
+- Accuracy: 1.0000
 
 ## 📦 Dependències Principals
 | Paquet | Versió | Ús |
