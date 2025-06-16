@@ -1,49 +1,48 @@
-# Prospection Models
+# Models de Prospecció
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Este repositorio contiene modelos de clasificación para la prospección de empresas, incluyendo tanto modelos supervisados como no supervisados.
+Aquest repositori conté models de classificació per a la prospecció d'empreses, incloent-hi tant models supervisats com no supervisats.
 
-## 📋 Requisitos
+## 📋 Requisits
 
 - Python 3.8 o superior
-- pip (gestor de paquetes de Python)
+- pip (gestor de paquets de Python)
 
-## 🚀 Instalación
+## 🚀 Instal·lació
 
-1. Clonar el repositorio:
+1. Clonar el repositori:
 ```bash
 git clone https://github.com/yourusername/prospection-models.git
 cd prospection-models
 ```
 
-2. Crear y activar el entorno virtual:
+2. Crear i activar l'entorn virtual:
 ```bash
-# En Windows
+# A Windows
 python -m venv venv
 .\venv\Scripts\activate
 
-# En Linux/Mac
+# A Linux/Mac
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-3. Instalar las dependencias:
+3. Instal·lar les dependències:
 ```bash
 pip install -r requirements.txt
 ```
 
-## 📁 Estructura del Proyecto
+## 📁 Estructura del Projecte
 
 ```
 prospection-models/
 │
 ├── data/
-│   ├── raw/          # Datos originales
-│   └── interim/      # Datos procesados
+│   ├── raw/          # Dades originals
+│   └── interim/      # Dades processades
 │
-├── output/           # Resultados y visualizaciones
+├── output/           # Resultats i visualitzacions
 │   ├── histograms_before.png
 │   ├── histograms_after.png
 │   ├── confusion_matrices.png
@@ -51,75 +50,127 @@ prospection-models/
 │   └── tsne_visualization_fp.png
 │
 ├── scripts/
-│   ├── modelling/    # Modelos supervisados y no supervisados
+│   ├── modelling/    # Models supervisats i no supervisats
 │   │   ├── supervised.py
 │   │   └── unsupervised.py
 │   │
-│   ├── preprocessing/# Procesamiento de datos
+│   ├── preprocessing/# Processament de dades
 │   │   └── data_loading.py
 │   │
-│   └── visualization/# Visualizaciones y análisis
+│   └── visualization/# Visualitzacions i anàlisi
 │       ├── utils.py
 │       └── statistics.py
 │
-├── requirements.txt  # Dependencias del proyecto
-└── README.md        # Este archivo
+├── requirements.txt  # Dependències del projecte
+└── README.md        # Aquest arxiu
 ```
 
-## ⚠️ Nota Importante sobre los Datos
+## ⚠️ Nota Important sobre les Dades
 
-Los datos originales no están incluidos en este repositorio por razones de privacidad y confidencialidad. Sin embargo, puedes ver los resultados del análisis y las visualizaciones en la carpeta `output/`, que incluye:
+Les dades originals no estan incloses en aquest repositori per raons de privacitat i confidencialitat. Tot i així, pots veure els resultats de l'anàlisi i les visualitzacions a la carpeta `output/`, que inclou:
 
-- Curvas Precision-Recall
-- Matrices de confusión
-- Visualizaciones t-SNE
-- Histogramas
-- Métricas de rendimiento
+- Corbes Precision-Recall
+- Matrius de confusió
+- Visualitzacions t-SNE
+- Histogrames
+- Mètriques de rendiment
 
-## 🎯 Uso
+## 🎯 Ús
 
-Para ejecutar el análisis completo:
+Per executar l'anàlisi complet:
 
 ```bash
 python scripts/main.py
 ```
 
-Para ejecutar componentes específicos:
+Per executar components específics:
 
 ```bash
-# Modelos supervisados
+# Models supervisats
 python scripts/modelling/supervised.py
 
-# Modelos no supervisados
+# Models no supervisats
 python scripts/modelling/unsupervised.py
 
-# Análisis estadístico
+# Anàlisi estadístic
 python scripts/visualization/statistics.py
 ```
 
-## 📊 Resultados
+## 📊 Resultats
 
-Los resultados se guardan automáticamente en la carpeta `output/`:
+Els resultats es guarden automàticament a la carpeta `output/`:
 
-| Archivo | Descripción |
+| Arxiu | Descripció |
 |---------|-------------|
-| `histograms_before.png` | Histogramas antes del preprocesamiento |
-| `histograms_after.png` | Histogramas después del preprocesamiento |
-| `confusion_matrices.png` | Matrices de confusión de los modelos supervisados |
-| `unsupervised_pr_curves.png` | Curvas Precision-Recall de los modelos no supervisados |
-| `tsne_visualization_fp.png` | Visualización t-SNE con falsos positivos |
+| `histograms_before.png` | Histogrames abans del preprocessament |
+| `histograms_after.png` | Histogrames després del preprocessament |
+| `confusion_matrices.png` | Matrius de confusió dels models supervisats |
+| `unsupervised_pr_curves.png` | Corbes Precision-Recall dels models no supervisats |
+| `tsne_visualization_fp.png` | Visualització t-SNE amb falsos positius |
 
-## 🔧 Dependencias Principales
+## 🔧 Dependències Principals
 
-| Paquete | Uso |
+| Paquet | Ús |
 |---------|-----|
-| pandas | Manipulación de datos |
-| numpy | Cálculos numéricos |
-| scikit-learn | Modelos de machine learning |
-| xgboost | Modelo de boosting |
-| matplotlib | Visualizaciones |
-| seaborn | Visualizaciones estadísticas |
+| pandas | Manipulació de dades |
+| numpy | Càlculs numèrics |
+| scikit-learn | Models de machine learning |
+| xgboost | Model de boosting |
+| matplotlib | Visualitzacions |
+| seaborn | Visualitzacions estadístiques |
 
-## 📝 Licencia
+## 💻 Ús
+1. Carrega les dades:
+```bash
+python scripts/data_loading.py
+```
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+2. Executa els models supervisats:
+```bash
+python scripts/modelling/supervised.py
+```
+
+3. Executa els models no supervisats:
+```bash
+python scripts/modelling/unsupervised.py
+```
+
+4. Genera visualitzacions:
+```bash
+python scripts/visualization/statistics.py
+```
+
+## 📊 Resultats
+
+### Models Supervisats
+| Model | Precision | Recall | F1 Score | Accuracy |
+|-------|-----------|---------|-----------|-----------|
+| RandomForest | 1.0000 | 0.9630 | 0.9811 | 0.9828 |
+| LogisticRegression | 1.0000 | 0.9630 | 0.9811 | 0.9828 |
+| SVC (linear) | 1.0000 | 0.9630 | 0.9811 | 0.9828 |
+| KNN | 0.9643 | 1.0000 | 0.9818 | 0.9828 |
+| NaiveBayes | 1.0000 | 0.9630 | 0.9811 | 0.9828 |
+| XGBoost | 1.0000 | 0.9259 | 0.9615 | 0.9655 |
+
+### Models No Supervisats
+| Model | Precision | Recall | F1 Score | Accuracy |
+|-------|-----------|---------|-----------|-----------|
+| Model de Paraules Clau | 0.0000 | 0.0000 | 0.0000 | 0.5347 |
+| Model de Similitud | 0.9710 | 1.0000 | 0.9853 | 0.9861 |
+
+### Finetuning del Model de Similitud
+El millor threshold trobat és **0.51** amb les següents mètriques:
+- F1 Score: 0.9926
+- Precision: 0.9853
+- Recall: 1.0000
+- Accuracy: 0.9931
+
+## 📦 Dependències Principals
+| Paquet | Versió | Ús |
+|--------|---------|-----|
+| pandas | 2.0.0 | Manipulació de dades |
+| numpy | 1.24.0 | Càlculs numèrics |
+| scikit-learn | 1.2.0 | Models de machine learning |
+| xgboost | 1.7.0 | Model XGBoost |
+| matplotlib | 3.7.0 | Visualitzacions |
+| seaborn | 0.12.0 | Visualitzacions estadístiques |

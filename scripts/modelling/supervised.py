@@ -89,6 +89,21 @@ def train_models(X_train, y_train):
     return models
 
 
+def save_metrics_to_file(metrics_dict, output_path):
+    """Guarda les mètriques en un arxiu de text."""
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write("=" * 50 + "\n")
+        f.write("📊 MÈTRIQUES DELS MODELS\n")
+        f.write("=" * 50 + "\n\n")
+
+        for model_name, metrics in metrics_dict.items():
+            f.write(f"🧪 {model_name}\n")
+            f.write("-" * 30 + "\n")
+            for metric_name, value in metrics.items():
+                f.write(f"{metric_name:<12}: {value:.4f}\n")
+            f.write("\n")
+
+
 def evaluate_model(models, X_test, y_test):
     X_test = np.array(X_test)
     y_test = np.array(y_test)
@@ -125,6 +140,10 @@ def evaluate_model(models, X_test, y_test):
         print(f"   F1 Score  : {f1:.4f}")
         print(f"   Accuracy  : {acc:.4f}")
         print()
+
+    # Guardar mètriques en arxiu
+    save_metrics_to_file(final_results, "output/supervised_metrics.txt")
+    print("✅ Mètriques guardades a output/supervised_metrics.txt")
 
     # 📋 També pots imprimir un resum estil taula
     import pandas as pd

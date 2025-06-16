@@ -1,0 +1,46 @@
+==================================================
+📊 MÈTRIQUES DELS MODELS
+==================================================
+
+🧪 RandomForest
+------------------------------
+Precision   : 1.0000
+Recall      : 0.9630
+F1 Score    : 0.9811
+Accuracy    : 0.9828
+
+🧪 LogisticRegression
+------------------------------
+Precision   : 1.0000
+Recall      : 0.9630
+F1 Score    : 0.9811
+Accuracy    : 0.9828
+
+🧪 SVC (linear)
+------------------------------
+Precision   : 1.0000
+Recall      : 0.9630
+F1 Score    : 0.9811
+Accuracy    : 0.9828
+
+🧪 KNN
+------------------------------
+Precision   : 0.9643
+Recall      : 1.0000
+F1 Score    : 0.9818
+Accuracy    : 0.9828
+
+🧪 NaiveBayes
+------------------------------
+Precision   : 1.0000
+Recall      : 0.9630
+F1 Score    : 0.9811
+Accuracy    : 0.9828
+
+🧪 XGBoost
+------------------------------
+Precision   : 1.0000
+Recall      : 0.9259
+F1 Score    : 0.9615
+Accuracy    : 0.9655
+
